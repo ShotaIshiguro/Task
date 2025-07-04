@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#log
+log/
+
+#application.properties
+src/main/resources/application.properties
+src/main/resources/application-mysql.propertiesz
