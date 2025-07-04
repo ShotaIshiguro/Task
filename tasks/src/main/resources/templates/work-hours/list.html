@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/base}">
+<head>
+    <title>稼働管理</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold text-gray-800">稼働管理</h1>
+            <button class="btn-primary">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                </svg>
+                稼働時間記録
+            </button>
+        </div>
+
+        <!-- 統計カード -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+            <div class="card">
+                <div class="text-center">
+                    <p class="text-sm font-medium text-gray-600">今月の総稼働時間</p>
+                    <p class="text-3xl font-bold text-primary-600">156h</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="text-center">
+                    <p class="text-sm font-medium text-gray-600">今週の稼働時間</p>
+                    <p class="text-3xl font-bold text-green-600">32h</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="text-center">
+                    <p class="text-sm font-medium text-gray-600">今日の稼働時間</p>
+                    <p class="text-3xl font-bold text-blue-600">8h</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="text-center">
+                    <p class="text-sm font-medium text-gray-600">平均稼働時間/日</p>
+                    <p class="text-3xl font-bold text-purple-600">7.8h</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- フィルター -->
+        <div class="card mb-6">
+            <div class="flex flex-wrap gap-4">
+                <div class="flex-1 min-w-64">
+                    <input type="date" class="input-field" value="2024-12-01">
+                </div>
+                <div class="flex-1 min-w-64">
+                    <input type="date" class="input-field" value="2024-12-31">
+                </div>
+                <select class="input-field min-w-32">
+                    <option value="">プロジェクト</option>
+                    <option value="project1">Webサイトリニューアル</option>
+                    <option value="project2">データベース設計</option>
+                </select>
+                <button class="btn-secondary">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    検索
+                </button>
+            </div>
+        </div>
+
+        <!-- 稼働時間テーブル -->
+        <div class="card">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">日付</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">プロジェクト</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">作業内容</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">開始時間</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">終了時間</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">稼働時間</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">2024-12-01</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">Webサイトリニューアル</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-900">フロントエンド開発、レスポンシブデザイン対応</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">09:00</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">18:00</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">8.0h</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <button class="text-primary-600 hover:text-primary-900 mr-3">編集</button>
+                                <button class="text-red-600 hover:text-red-900">削除</button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">2024-11-30</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">データベース設計</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-900">ER図作成、テーブル設計、インデックス最適化</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">10:00</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">17:00</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">7.0h</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <button class="text-primary-600 hover:text-primary-900 mr-3">編集</button>
+                                <button class="text-red-600 hover:text-red-900">削除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

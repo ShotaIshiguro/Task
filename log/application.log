@@ -1,0 +1,570 @@
+2025-07-04T17:57:13.669+09:00  INFO 74762 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 74762 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T17:57:13.670+09:00 DEBUG 74762 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T17:57:13.670+09:00  INFO 74762 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T17:57:13.781+09:00  INFO 74762 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-04T17:57:13.781+09:00  INFO 74762 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-04T17:57:14.133+09:00  INFO 74762 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T17:57:14.138+09:00  INFO 74762 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-07-04T17:57:14.344+09:00  INFO 74762 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T17:57:14.349+09:00  INFO 74762 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T17:57:14.350+09:00  INFO 74762 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T17:57:14.367+09:00  INFO 74762 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T17:57:14.367+09:00  INFO 74762 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 585 ms
+2025-07-04T17:57:14.468+09:00  INFO 74762 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T17:57:14.493+09:00  INFO 74762 --- [tasks] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-04T17:57:14.507+09:00  INFO 74762 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T17:57:14.610+09:00  INFO 74762 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T17:57:14.623+09:00  INFO 74762 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-04T17:57:16.464+09:00  INFO 74762 --- [tasks] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@312929f4
+2025-07-04T17:57:16.466+09:00  INFO 74762 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-04T17:57:17.211+09:00  INFO 74762 --- [tasks] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T17:57:17.345+09:00  INFO 74762 --- [tasks] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T17:57:17.347+09:00  INFO 74762 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T17:57:17.424+09:00  WARN 74762 --- [tasks] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T17:57:17.453+09:00  WARN 74762 --- [tasks] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public java.lang.String com.task.kanri.tools.tasks.SC_01.controller.CustomerController.init(org.springframework.ui.Model), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/init"}, produces={}, value={"/init"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-07-04T17:57:17.632+09:00  INFO 74762 --- [tasks] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-04T17:57:17.635+09:00  INFO 74762 --- [tasks] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T17:57:17.663+09:00  INFO 74762 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T17:57:17.675+09:00  INFO 74762 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Started TasksApplication in 4.199 seconds (process running for 4.419)
+2025-07-04T17:57:41.677+09:00  INFO 74762 --- [tasks] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-04T17:57:41.677+09:00  INFO 74762 --- [tasks] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-04T17:57:41.678+09:00  INFO 74762 --- [tasks] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-04T17:57:41.715+09:00  INFO 74762 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.c.CustomerController         : init
+2025-07-04T17:57:41.898+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==>  Preparing: SELECT t.torihikisaki_id as torihikisakiId, t.torihikisaki_name as torihikisakiName, t.hojin_kojin_kbn as hojinKojinKbn FROM TORIHIKISAKI t WHERE t.deleted_flag = '0' ORDER BY t.torihikisaki_name
+2025-07-04T17:57:41.904+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==> Parameters: 
+2025-07-04T17:57:42.076+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : <==      Total: 2
+2025-07-04T17:57:42.078+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T17:57:42.078+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 1(String)
+2025-07-04T17:57:42.250+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T17:57:42.250+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T17:57:42.251+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 2(String)
+2025-07-04T17:57:42.411+09:00 DEBUG 74762 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T17:58:06.869+09:00  INFO 74762 --- [tasks] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T17:58:06.879+09:00  INFO 74762 --- [tasks] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T17:58:06.886+09:00  INFO 74762 --- [tasks] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T17:58:06.889+09:00  INFO 74762 --- [tasks] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-04T17:58:08.536+09:00  INFO 74762 --- [tasks] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-04T17:58:14.024+09:00  INFO 75313 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 75313 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T17:58:14.025+09:00 DEBUG 75313 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T17:58:14.025+09:00  INFO 75313 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T17:58:14.128+09:00  INFO 75313 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-04T17:58:14.128+09:00  INFO 75313 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-04T17:58:14.496+09:00  INFO 75313 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T17:58:14.502+09:00  INFO 75313 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-07-04T17:58:14.683+09:00  INFO 75313 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T17:58:14.688+09:00  INFO 75313 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T17:58:14.688+09:00  INFO 75313 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T17:58:14.706+09:00  INFO 75313 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T17:58:14.706+09:00  INFO 75313 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 578 ms
+2025-07-04T17:58:14.802+09:00  INFO 75313 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T17:58:14.825+09:00  INFO 75313 --- [tasks] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-04T17:58:14.837+09:00  INFO 75313 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T17:58:14.943+09:00  INFO 75313 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T17:58:14.954+09:00  INFO 75313 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-04T17:58:16.721+09:00  INFO 75313 --- [tasks] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e00500f
+2025-07-04T17:58:16.722+09:00  INFO 75313 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-04T17:58:17.449+09:00  INFO 75313 --- [tasks] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T17:58:17.578+09:00  INFO 75313 --- [tasks] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T17:58:17.580+09:00  INFO 75313 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T17:58:17.658+09:00  WARN 75313 --- [tasks] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T17:58:17.684+09:00  WARN 75313 --- [tasks] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public java.lang.String com.task.kanri.tools.tasks.SC_01.controller.CustomerController.init(org.springframework.ui.Model), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/init"}, produces={}, value={"/init"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-07-04T17:58:17.863+09:00  INFO 75313 --- [tasks] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-04T17:58:17.867+09:00  INFO 75313 --- [tasks] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T17:58:17.894+09:00  INFO 75313 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T17:58:17.906+09:00  INFO 75313 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Started TasksApplication in 4.148 seconds (process running for 4.335)
+2025-07-04T17:58:22.646+09:00  INFO 75313 --- [tasks] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-04T17:58:22.646+09:00  INFO 75313 --- [tasks] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-04T17:58:22.647+09:00  INFO 75313 --- [tasks] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-04T17:58:22.683+09:00  INFO 75313 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.c.CustomerController         : init
+2025-07-04T17:58:22.839+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==>  Preparing: SELECT t.torihikisaki_id as torihikisakiId, t.torihikisaki_name as torihikisakiName, t.hojin_kojin_kbn as hojinKojinKbn FROM TORIHIKISAKI t WHERE t.deleted_flag = '0' ORDER BY t.torihikisaki_name
+2025-07-04T17:58:22.850+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==> Parameters: 
+2025-07-04T17:58:23.025+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : <==      Total: 2
+2025-07-04T17:58:23.027+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T17:58:23.027+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 1(String)
+2025-07-04T17:58:23.189+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T17:58:23.189+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T17:58:23.189+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 2(String)
+2025-07-04T17:58:23.349+09:00 DEBUG 75313 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T17:58:36.655+09:00  INFO 75313 --- [tasks] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T17:58:36.661+09:00  INFO 75313 --- [tasks] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T17:58:36.667+09:00  INFO 75313 --- [tasks] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T17:58:36.669+09:00  INFO 75313 --- [tasks] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-04T17:58:38.309+09:00  INFO 75313 --- [tasks] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-04T20:59:51.484+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 26749 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T20:59:51.485+09:00 DEBUG 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T20:59:51.486+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T20:59:51.586+09:00  INFO 26749 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-04T20:59:51.586+09:00  INFO 26749 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-04T20:59:51.933+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T20:59:51.939+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-07-04T20:59:52.120+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T20:59:52.125+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T20:59:52.125+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T20:59:52.142+09:00  INFO 26749 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T20:59:52.142+09:00  INFO 26749 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 556 ms
+2025-07-04T20:59:52.231+09:00  INFO 26749 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T20:59:52.256+09:00  INFO 26749 --- [tasks] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-04T20:59:52.270+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T20:59:52.372+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T20:59:52.383+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-04T20:59:54.917+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16a52546
+2025-07-04T20:59:54.919+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-04T20:59:55.686+09:00  INFO 26749 --- [tasks] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T20:59:55.815+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T20:59:55.817+09:00  INFO 26749 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T20:59:55.897+09:00  WARN 26749 --- [tasks] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T20:59:55.926+09:00  WARN 26749 --- [tasks] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public java.lang.String com.task.kanri.tools.tasks.SC_01.controller.CustomerController.init(org.springframework.ui.Model), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/init"}, produces={}, value={"/init"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-07-04T20:59:56.104+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-04T20:59:56.107+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T20:59:56.136+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T20:59:56.148+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Started TasksApplication in 4.849 seconds (process running for 5.04)
+2025-07-04T20:59:59.911+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-04T20:59:59.911+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-04T20:59:59.912+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-04T20:59:59.960+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.c.CustomerController         : init
+2025-07-04T21:00:00.123+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==>  Preparing: SELECT t.torihikisaki_id as torihikisakiId, t.torihikisaki_name as torihikisakiName, t.hojin_kojin_kbn as hojinKojinKbn FROM TORIHIKISAKI t WHERE t.deleted_flag = '0' ORDER BY t.torihikisaki_name
+2025-07-04T21:00:00.132+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==> Parameters: 
+2025-07-04T21:00:00.318+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] c.t.k.t.t.S.r.SC_01_Repository.findAll   : <==      Total: 2
+2025-07-04T21:00:00.320+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:00:00.320+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 1(String)
+2025-07-04T21:00:00.485+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:00:00.486+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:00:00.486+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 2(String)
+2025-07-04T21:00:00.663+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-1] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:01:45.416+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-4] c.t.k.t.t.S.c.CustomerController         : init
+2025-07-04T21:01:45.604+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==>  Preparing: SELECT t.torihikisaki_id as torihikisakiId, t.torihikisaki_name as torihikisakiName, t.hojin_kojin_kbn as hojinKojinKbn FROM TORIHIKISAKI t WHERE t.deleted_flag = '0' ORDER BY t.torihikisaki_name
+2025-07-04T21:01:45.605+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==> Parameters: 
+2025-07-04T21:01:45.821+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] c.t.k.t.t.S.r.SC_01_Repository.findAll   : <==      Total: 2
+2025-07-04T21:01:45.822+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:01:45.823+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 1(String)
+2025-07-04T21:01:45.985+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:01:45.987+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:01:45.987+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 2(String)
+2025-07-04T21:01:46.159+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-4] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:02:03.326+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-6] c.t.k.t.t.S.c.CustomerController         : init
+2025-07-04T21:02:03.524+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==>  Preparing: SELECT t.torihikisaki_id as torihikisakiId, t.torihikisaki_name as torihikisakiName, t.hojin_kojin_kbn as hojinKojinKbn FROM TORIHIKISAKI t WHERE t.deleted_flag = '0' ORDER BY t.torihikisaki_name
+2025-07-04T21:02:03.526+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==> Parameters: 
+2025-07-04T21:02:03.683+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] c.t.k.t.t.S.r.SC_01_Repository.findAll   : <==      Total: 2
+2025-07-04T21:02:03.684+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:02:03.684+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 1(String)
+2025-07-04T21:02:03.847+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:02:03.848+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:02:03.848+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 2(String)
+2025-07-04T21:02:04.005+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-6] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:02:56.468+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-2] c.t.k.t.t.S.c.CustomerController         : init
+2025-07-04T21:02:56.678+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==>  Preparing: SELECT t.torihikisaki_id as torihikisakiId, t.torihikisaki_name as torihikisakiName, t.hojin_kojin_kbn as hojinKojinKbn FROM TORIHIKISAKI t WHERE t.deleted_flag = '0' ORDER BY t.torihikisaki_name
+2025-07-04T21:02:56.679+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==> Parameters: 
+2025-07-04T21:02:56.845+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] c.t.k.t.t.S.r.SC_01_Repository.findAll   : <==      Total: 2
+2025-07-04T21:02:56.847+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:02:56.848+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 1(String)
+2025-07-04T21:02:57.009+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:02:57.011+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:02:57.012+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 2(String)
+2025-07-04T21:02:57.178+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-2] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:06:44.456+09:00  INFO 26749 --- [tasks] [http-nio-8080-exec-8] c.t.k.t.t.S.c.CustomerController         : init
+2025-07-04T21:06:44.622+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==>  Preparing: SELECT t.torihikisaki_id as torihikisakiId, t.torihikisaki_name as torihikisakiName, t.hojin_kojin_kbn as hojinKojinKbn FROM TORIHIKISAKI t WHERE t.deleted_flag = '0' ORDER BY t.torihikisaki_name
+2025-07-04T21:06:44.624+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] c.t.k.t.t.S.r.SC_01_Repository.findAll   : ==> Parameters: 
+2025-07-04T21:06:44.791+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] c.t.k.t.t.S.r.SC_01_Repository.findAll   : <==      Total: 2
+2025-07-04T21:06:44.792+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:06:44.793+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 1(String)
+2025-07-04T21:06:44.976+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T21:06:44.978+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==>  Preparing: SELECT k.kubun_cd, k.kubun_name, k.kubunchi_cd, k.kubunchi_name FROM KUBUNCHI k WHERE k.deleted_flag = '0' AND k.kubun_cd = ? AND k.kubunchi_cd = ?
+2025-07-04T21:06:44.978+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : ==> Parameters: 0001(String), 2(String)
+2025-07-04T21:06:45.147+09:00 DEBUG 26749 --- [tasks] [http-nio-8080-exec-8] t.k.t.t.c.r.K.findByKubunCdAndKubunchiCd : <==      Total: 1
+2025-07-04T22:34:10.304+09:00  INFO 26749 --- [tasks] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-07-04T22:34:10.319+09:00  INFO 26749 --- [tasks] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T22:34:10.325+09:00  INFO 26749 --- [tasks] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T22:34:10.331+09:00  INFO 26749 --- [tasks] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T22:34:10.335+09:00  INFO 26749 --- [tasks] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-04T22:34:12.051+09:00  INFO 26749 --- [tasks] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-04T22:34:12.141+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 26749 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T22:34:12.141+09:00 DEBUG 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T22:34:12.141+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T22:34:12.242+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T22:34:12.244+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-07-04T22:34:12.294+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T22:34:12.294+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T22:34:12.294+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T22:34:12.299+09:00  INFO 26749 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T22:34:12.299+09:00  INFO 26749 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 154 ms
+2025-07-04T22:34:12.317+09:00  INFO 26749 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T22:34:12.318+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T22:34:12.322+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T22:34:12.323+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-04T22:34:14.427+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@304a04d
+2025-07-04T22:34:14.427+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-04T22:34:15.128+09:00  INFO 26749 --- [tasks] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T22:34:15.153+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T22:34:15.153+09:00  INFO 26749 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T22:34:15.183+09:00  WARN 26749 --- [tasks] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T22:34:15.189+09:00  WARN 26749 --- [tasks] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public java.lang.String com.task.kanri.tools.tasks.SC_01.controller.CustomerController.init(org.springframework.ui.Model), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/init"}, produces={}, value={"/init"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-07-04T22:34:15.238+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-04T22:34:15.239+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T22:34:15.245+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T22:34:15.249+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Started TasksApplication in 3.122 seconds (process running for 5664.107)
+2025-07-04T22:34:15.250+09:00  INFO 26749 --- [tasks] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-04T22:34:16.659+09:00  INFO 26749 --- [tasks] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-04T22:34:16.661+09:00  INFO 26749 --- [tasks] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T22:34:16.664+09:00  INFO 26749 --- [tasks] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T22:34:16.667+09:00  INFO 26749 --- [tasks] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T22:34:16.668+09:00  INFO 26749 --- [tasks] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-07-04T22:34:17.304+09:00  INFO 26749 --- [tasks] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-07-04T22:34:17.352+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 26749 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T22:34:17.352+09:00 DEBUG 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T22:34:17.352+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T22:34:17.412+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T22:34:17.413+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-07-04T22:34:17.440+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T22:34:17.440+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T22:34:17.440+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T22:34:17.445+09:00  INFO 26749 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T22:34:17.445+09:00  INFO 26749 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 92 ms
+2025-07-04T22:34:17.458+09:00  INFO 26749 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T22:34:17.458+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T22:34:17.461+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T22:34:17.461+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-07-04T22:34:19.059+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@3183a8e7
+2025-07-04T22:34:19.059+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-07-04T22:34:19.957+09:00  INFO 26749 --- [tasks] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T22:34:19.964+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T22:34:19.964+09:00  INFO 26749 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T22:34:19.987+09:00  WARN 26749 --- [tasks] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T22:34:19.992+09:00  WARN 26749 --- [tasks] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public java.lang.String com.task.kanri.tools.tasks.SC_01.controller.CustomerController.init(org.springframework.ui.Model), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/init"}, produces={}, value={"/init"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-07-04T22:34:20.027+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-04T22:34:20.028+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T22:34:20.034+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T22:34:20.037+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Started TasksApplication in 2.696 seconds (process running for 5668.895)
+2025-07-04T22:34:20.038+09:00  INFO 26749 --- [tasks] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-04T22:34:22.458+09:00  INFO 26749 --- [tasks] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 21 class path changes (0 additions, 0 deletions, 21 modifications)
+2025-07-04T22:34:22.460+09:00  INFO 26749 --- [tasks] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T22:34:22.463+09:00  INFO 26749 --- [tasks] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T22:34:22.466+09:00  INFO 26749 --- [tasks] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T22:34:22.467+09:00  INFO 26749 --- [tasks] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-07-04T22:34:23.549+09:00  INFO 26749 --- [tasks] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-07-04T22:34:23.602+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 26749 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T22:34:23.602+09:00 DEBUG 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T22:34:23.602+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T22:34:23.669+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T22:34:23.670+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-07-04T22:34:23.693+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T22:34:23.693+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T22:34:23.693+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T22:34:23.697+09:00  INFO 26749 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T22:34:23.697+09:00  INFO 26749 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 94 ms
+2025-07-04T22:34:23.708+09:00  INFO 26749 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T22:34:23.708+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T22:34:23.711+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T22:34:23.711+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-07-04T22:34:25.305+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@26c263d
+2025-07-04T22:34:25.306+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-07-04T22:34:26.000+09:00  INFO 26749 --- [tasks] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T22:34:26.005+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T22:34:26.005+09:00  INFO 26749 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T22:34:26.022+09:00  WARN 26749 --- [tasks] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T22:34:26.026+09:00  WARN 26749 --- [tasks] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public java.lang.String com.task.kanri.tools.tasks.SC_01.controller.CustomerController.init(org.springframework.ui.Model), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/init"}, produces={}, value={"/init"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-07-04T22:34:26.054+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-04T22:34:26.054+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T22:34:26.065+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T22:34:26.068+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Started TasksApplication in 2.477 seconds (process running for 5674.926)
+2025-07-04T22:34:26.069+09:00  INFO 26749 --- [tasks] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-04T22:35:13.966+09:00  INFO 26749 --- [tasks] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-04T22:35:13.972+09:00  INFO 26749 --- [tasks] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T22:35:13.975+09:00  INFO 26749 --- [tasks] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T22:35:13.976+09:00  INFO 26749 --- [tasks] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T22:35:13.977+09:00  INFO 26749 --- [tasks] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-07-04T22:35:15.587+09:00  INFO 26749 --- [tasks] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-07-04T22:35:15.660+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 26749 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T22:35:15.660+09:00 DEBUG 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T22:35:15.660+09:00  INFO 26749 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T22:35:15.748+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T22:35:15.750+09:00  INFO 26749 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-07-04T22:35:15.777+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T22:35:15.778+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T22:35:15.778+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T22:35:15.783+09:00  INFO 26749 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T22:35:15.783+09:00  INFO 26749 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 122 ms
+2025-07-04T22:35:15.797+09:00  INFO 26749 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T22:35:15.798+09:00  INFO 26749 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T22:35:15.801+09:00  INFO 26749 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T22:35:15.801+09:00  INFO 26749 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-07-04T22:35:15.801+09:00  WARN 26749 --- [tasks] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:jdbc:mysql://localhost:3306/task_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:111) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:331) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:116) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:94) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.task.kanri.tools.tasks.TasksApplication.main(TasksApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
+
+2025-07-04T22:35:15.805+09:00 ERROR 26749 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-07-04T22:35:15.805+09:00  WARN 26749 --- [tasks] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-07-04T22:35:15.805+09:00  INFO 26749 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-04T22:35:15.809+09:00  INFO 26749 --- [tasks] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-04T22:35:15.818+09:00 ERROR 26749 --- [tasks] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.task.kanri.tools.tasks.TasksApplication.main(TasksApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 20 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:408) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	... 35 common frames omitted
+
+2025-07-04T23:02:01.003+09:00  INFO 94919 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Starting TasksApplication using Java 17.0.12 with PID 94919 (/Users/shotaishiguro/IdeaProjects/Task/tasks/target/classes started by shotaishiguro in /Users/shotaishiguro/IdeaProjects/Task)
+2025-07-04T23:02:01.004+09:00 DEBUG 94919 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-04T23:02:01.004+09:00  INFO 94919 --- [tasks] [restartedMain] c.t.kanri.tools.tasks.TasksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T23:02:01.107+09:00  INFO 94919 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-04T23:02:01.108+09:00  INFO 94919 --- [tasks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-04T23:02:01.445+09:00  INFO 94919 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T23:02:01.451+09:00  INFO 94919 --- [tasks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-07-04T23:02:01.627+09:00  INFO 94919 --- [tasks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T23:02:01.633+09:00  INFO 94919 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T23:02:01.633+09:00  INFO 94919 --- [tasks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-04T23:02:01.649+09:00  INFO 94919 --- [tasks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T23:02:01.649+09:00  INFO 94919 --- [tasks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 541 ms
+2025-07-04T23:02:01.736+09:00  INFO 94919 --- [tasks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T23:02:01.758+09:00  INFO 94919 --- [tasks] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-04T23:02:01.771+09:00  INFO 94919 --- [tasks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T23:02:01.868+09:00  INFO 94919 --- [tasks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T23:02:01.880+09:00  INFO 94919 --- [tasks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-04T23:02:01.883+09:00  WARN 94919 --- [tasks] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:jdbc:mysql://localhost:3306/task_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:111) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:331) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:116) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:94) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.task.kanri.tools.tasks.TasksApplication.main(TasksApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
+
+2025-07-04T23:02:01.885+09:00 ERROR 94919 --- [tasks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-07-04T23:02:01.885+09:00  WARN 94919 --- [tasks] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-07-04T23:02:01.887+09:00  INFO 94919 --- [tasks] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-04T23:02:01.898+09:00  INFO 94919 --- [tasks] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-04T23:02:01.905+09:00 ERROR 94919 --- [tasks] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.task.kanri.tools.tasks.TasksApplication.main(TasksApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 20 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:408) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	... 35 common frames omitted
+

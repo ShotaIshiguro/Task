@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.task.kanri.tools.tasks.common.repository.KubunchiRepository">
+
+    <!-- 区分マスタ取得 -->
+    <select id="findByKubunCdAndKubunchiCd" resultType="com.task.kanri.tools.tasks.common.bean.Kubunchi">
+        SELECT 
+            k.kubun_cd,
+            k.kubun_name,
+            k.kubunchi_cd,
+            k.kubunchi_name
+        FROM 
+            KUBUNCHI k
+        WHERE
+            k.deleted_flag = '0'
+            AND k.kubun_cd = #{kubunCd}
+            AND k.kubunchi_cd = #{kubunchiCd}
+    </select>
+
+</mapper>

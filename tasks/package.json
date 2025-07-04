@@ -1,0 +1,20 @@
+{
+  "name": "task-management-app",
+  "version": "1.0.0",
+  "description": "Task Management Application with Spring Boot and Tailwind CSS",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/main/resources/static/css/input.css -o ./src/main/resources/static/css/output.css --watch",
+    "build:css:prod": "tailwindcss -i ./src/main/resources/static/css/input.css -o ./src/main/resources/static/css/output.css --minify",
+    "mysql:start": "brew services start mysql@8.0",
+    "mysql:stop": "brew services stop mysql@8.0",
+    "mysql:restart": "brew services restart mysql@8.0",
+    "mysql:status": "brew services list | grep mysql",
+    "mysql:login": "mysql -u root -p",
+    "mysql:login:root": "mysql -u root",
+    "mysql:reset-password": "echo 'MySQLパスワードリセット手順:\\n1. npm run mysql:stop\\n2. mysqld_safe --skip-grant-tables --skip-networking &\\n3. sleep 3 && mysql -u root\\n4. FLUSH PRIVILEGES;\\n5. ALTER USER \\'root\\'@\\'localhost\\' IDENTIFIED BY \\'新しいパスワード\\';\\n6. FLUSH PRIVILEGES;\\n7. EXIT;\\n8. pkill mysqld\\n9. npm run mysql:start'",
+    "mysql:setup": "npm run mysql:start && echo 'MySQLを起動しました。ログインするには: npm run mysql:login'"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+} 
